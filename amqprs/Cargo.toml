@@ -51,7 +51,7 @@ uriparse = { version = "0.6", optional = true }
 serde_bytes = { workspace = true }
 
 # SSL/TLS dependencies
-tokio-rustls = { version = "0.26", optional = true }
+tokio-rustls = { version = "0.26", optional = true, default-features = false, features = ["logging", "tls12"] }
 rustls-pemfile = { version = "2.1.2", optional = true }
 rustls-webpki = { version = "0.102", optional = true }
 webpki-roots = { version = "0.26", optional = true }
